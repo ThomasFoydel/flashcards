@@ -1,0 +1,73 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+  top: 0;
+}
+
+body {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.7;
+  box-sizing: border-box;
+  background: rgb(44, 44, 44);
+  max-width: 100vw;
+  overflow-y: hidden;
+}
+
+html,
+body {
+  overscroll-behavior: none;
+}
+
+button:focus,
+textarea:focus,
+input:focus {
+  outline: none;
+}
+
+a {
+  text-decoration: none;
+
+  color: inherit;
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+.hover-pointer {
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.flex {
+  display: flex;
+}
+
+.app-container {
+  height: 100vh;
+  overflow-y: scroll;
+}
+
+.app-subjectsandcards {
+  display: flex;
+  height: 67vh;
+  min-height: 40rem;
+}
+
+.backdropblur {
+  background: rgba(10, 10, 10, 0.356);
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  backdrop-filter: blur(0.2rem);
+}

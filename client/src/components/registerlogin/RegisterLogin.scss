@@ -1,0 +1,60 @@
+.registerlogin-container {
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+}
+
+.registerlogin-innercontainer {
+  position: absolute;
+  padding: 0.4rem;
+  background: white;
+  margin-left: 50%;
+  transform: translateX(-50%);
+  width: 50%;
+  margin-top: 20%;
+  z-index: 4;
+}
+
+.login-loginbutton,
+.register-registerbutton {
+  cursor: pointer;
+  background: rgb(29, 119, 253);
+  color: rgb(230, 230, 230);
+  width: 80%;
+  height: 3rem;
+  padding-top: 0.3rem;
+  text-align: center;
+  margin: 3rem 10% 0 10%;
+  transition: all 0.3s cubic-bezier(0.77, 0, 0.175, 1);
+  transform: scale(1);
+  letter-spacing: 0.2rem;
+
+  &:hover {
+    letter-spacing: 0.4rem;
+    transform: scale(1.1);
+    background: rgb(17, 83, 180);
+    color: rgb(255, 255, 255);
+  }
+  &:active {
+    letter-spacing: 0.3rem;
+    transform: scale(1.05);
+  }
+}
+
+.login-registerlink,
+.register-loginlink {
+  float: right;
+  margin-right: 0.5rem;
+  cursor: pointer;
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+.login-input,
+.register-input {
+  width: 45%;
+  margin: 0.2rem 2.5%;
+  padding: 0.3rem;
+}

@@ -1,0 +1,44 @@
+.cardcontainer {
+  margin-top: 6rem;
+  width: 75vw;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+.cardcontainer-buttoncontainer {
+  display: flex;
+  margin-left: 50%;
+  transform: translateX(-50%);
+  width: 50%;
+  text-align: center;
+  height: 20rem;
+  position: absolute;
+  bottom: -15rem;
+}
+
+.cardcontainer-previousbutton,
+.cardcontainer-nextbutton {
+  background: rgba(238, 238, 238, 1);
+  z-index: -1;
+  margin: 0 0.5rem;
+  // margin-top: 46vh;
+
+  width: 48%;
+  height: 5rem;
+  padding-top: 1.2rem;
+  border-radius: 0.1rem;
+  transition: all 0.2s cubic-bezier(0.445, 0.05, 0.55, 0.95);
+  cursor: pointer;
+
+  &:hover {
+    background: dodgerblue;
+    color: #eee;
+  }
+  &:active {
+    background: rgb(25, 121, 218);
+  }
+}
+// .cardcontainer-previousbutton {
+// }
+// .cardcontainer-nextbutton {
+// }

@@ -1,0 +1,51 @@
+.entryform {
+  margin-top: 2rem;
+  margin-left: 50%;
+  transform: translateX(-50%);
+  background: #eee;
+  width: 100vw;
+  padding: 0.5rem;
+  padding-top: 1.5rem;
+  margin-bottom: 3rem;
+}
+
+.entryform-inputcontainer {
+  display: flex;
+  width: 85%;
+  margin-left: 50%;
+  transform: translateX(-50%);
+}
+
+.entryform-input {
+  resize: none;
+}
+
+.entryform-input-question,
+.entryform-input-answer {
+  min-height: 10rem;
+  margin: 0.2rem 0.5rem;
+  width: 50%;
+}
+.entryform-input-subject {
+  margin-left: 50%;
+  transform: translateX(-50%);
+  width: 50%;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+  height: 3rem;
+}
+
+.entryform-submitbutton {
+  width: 14rem;
+  margin-left: 50%;
+  transform: translateX(-50%);
+  background: dodgerblue;
+  color: #eee;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.2s cubic-bezier(0.445, 0.05, 0.55, 0.95);
+  &:hover {
+    color: dodgerblue;
+    background: rgb(212, 212, 212);
+  }
+}

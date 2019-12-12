@@ -1,0 +1,112 @@
+.subjectlist {
+  margin-top: 4rem;
+  background: rgb(209, 209, 209);
+  width: 25vw;
+  min-width: 19rem;
+  height: 55vh;
+  min-height: 40rem;
+  position: relative;
+}
+
+.subjectlist-subjectcontainer {
+  overflow-y: scroll;
+  height: 88%;
+}
+
+.subjectlist-savebuttoncontainer {
+  position: absolute;
+  bottom: 0;
+  background: white;
+  padding: 0.2rem;
+  width: 100%;
+}
+
+.subjectlist-nosavebutton {
+  height: 3rem;
+  padding-top: 0.3rem;
+  text-align: center;
+  transition: all 0.2s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  cursor: pointer;
+  &:hover {
+    color: white;
+    background: dodgerblue;
+  }
+}
+
+.subjectlist-savebutton {
+  cursor: pointer;
+
+  background: rgb(29, 119, 253);
+  color: rgb(230, 230, 230);
+  width: 80%;
+  height: 3rem;
+  padding-top: 0.3rem;
+  text-align: center;
+  margin: 1rem 2rem;
+  transition: all 0.3s cubic-bezier(0.77, 0, 0.175, 1);
+  transform: scale(1);
+  letter-spacing: 0.2rem;
+
+  &:hover {
+    letter-spacing: 0.4rem;
+    transform: scale(1.1);
+    background: rgb(17, 83, 180);
+    color: rgb(255, 255, 255);
+  }
+  &:active {
+    letter-spacing: 0.3rem;
+    transform: scale(1.05);
+  }
+}
+
+.subjectlist-subjectbutton {
+  cursor: pointer;
+  background: rgb(29, 119, 253);
+  color: rgb(230, 230, 230);
+  width: 80%;
+  height: 3rem;
+  padding-top: 0.3rem;
+  text-align: center;
+  margin: 1rem 2rem;
+  transition: all 0.3s cubic-bezier(0.77, 0, 0.175, 1);
+  transform: scale(1);
+  letter-spacing: 0.2rem;
+
+  &:hover {
+    letter-spacing: 0.4rem;
+    transform: scale(1.1);
+    background: rgb(17, 83, 180);
+    color: rgb(255, 255, 255);
+  }
+  &:active {
+    letter-spacing: 0.3rem;
+    transform: scale(1.05);
+  }
+}
+
+.subjectlist-individualsubject {
+  display: flex;
+}
+
+.subjectlist-dropbutton {
+  height: 2.6rem;
+  border-radius: 0.1rem;
+  padding: 0 0.8rem 0 0;
+  margin-top: 1.2rem;
+  color: rgb(161, 84, 84);
+
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+
+  .subjectlist-dropbutton-x {
+    transition: all 0.3s ease-in-out;
+    border-radius: 0.1rem;
+    transform: scale(1);
+  }
+  &:hover {
+    .subjectlist-dropbutton-x {
+      color: rgb(148, 14, 14);
+      transform: scale(1.3);
+    }
+  }
+}

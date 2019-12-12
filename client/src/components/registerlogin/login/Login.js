@@ -23,7 +23,7 @@ const Login = ({
     }
   };
   const handleSubmit = async () => {
-    const authInfo = await Axios.post('http://localhost:8000/login', {
+    const authInfo = await Axios.post('/login', {
       email: emailValue,
       password: passwordValue
     });

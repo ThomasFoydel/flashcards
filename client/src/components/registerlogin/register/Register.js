@@ -44,7 +44,7 @@ const Register = ({ cards, setCurrent }) => {
     console.log('handle submit');
     if (userNameValue && emailValue && passwordValue && confirmPasswordValue) {
       console.log('handle submit2');
-      const createdUser = await Axios.post('http://localhost:8000/register', {
+      const createdUser = await Axios.post('/register', {
         username: userNameValue,
         email: emailValue,
         password: passwordValue,

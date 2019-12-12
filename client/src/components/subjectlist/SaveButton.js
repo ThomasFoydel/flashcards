@@ -4,11 +4,9 @@ import { connect } from 'react-redux';
 
 const SaveButton = ({ cards, token, isLoggedIn, setShowRegisterLogin }) => {
   const handleSave = async () => {
-    const savedCards = await Axios.post(
-      'http://localhost:8000/savecards',
-      cards,
-      { headers: { 'x-auth-token': token } }
-    );
+    const savedCards = await Axios.post('/savecards', cards, {
+      headers: { 'x-auth-token': token }
+    });
     console.log('savedCards: ', savedCards.data.updatedUser);
   };
 

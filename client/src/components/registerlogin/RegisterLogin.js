@@ -11,7 +11,7 @@ const RegisterLogin = ({ showRegisterLogin, setShowRegisterLogin }) => {
   const animationProps = useSpring({
     opacity: showRegisterLogin ? 1 : 0,
     marginTop: showRegisterLogin ? '20%' : '10%',
-    config: config.wobbly
+    config: config.stiff
   });
 
   return (
